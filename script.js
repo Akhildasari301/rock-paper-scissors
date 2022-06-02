@@ -54,17 +54,6 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-// function play() {
-//     for (let i = 0; i < 5; i++){
-//         playerSelection = prompt("Enter your choice: ");
-//         computerSelection = computerPlay()
-//         console.log("Your choice: ", playerSelection);
-//         console.log("computer's choice: ", computerSelection);
-//         result = playRound(playerSelection, computerSelection);
-//         message = `Round ${i+1}: ${result}`;
-//         console.log(message);
-//     }
-// }
 let game_count = 0;
 let rock = document.querySelector('.rock')
 let paper = document.querySelector('.paper')
@@ -82,32 +71,6 @@ tie_score_div.textContent = 0;
 
 
 
-// rock.addEventListener('click', () => playRound('rock', computerPlay()));
-// paper.addEventListener('click', () => playRound('paper', computerPlay()))
-// scissors.addEventListener('click', () => playRound('scissors', computerPlay()))
-
-
-rock.addEventListener('click', () => {
-    playRound('rock', computerPlay());
-    console.log("you chose rock");
-    console.log(`pScore: ${pScore}`)
-    console.log(`cScore: ${cScore}`)
-    console.log(`tieScore: ${tieScore}`)
-});
-
-paper.addEventListener('click', () => {
-    playRound('paper', computerPlay());
-    console.log("you chose paper");
-    console.log(`pScore: ${pScore}`)
-    console.log(`cScore: ${cScore}`)
-    console.log(`tieScore: ${tieScore}`)
-});
-
-scissors.addEventListener('click', () => {
-    playRound('scissors', computerPlay());
-    console.log("you chose scissors");
-    console.log(`pScore: ${pScore}`)
-    console.log(`cScore: ${cScore}`)
-    console.log(`tieScore: ${tieScore}`)
-
-});
+rock.addEventListener('click', () => playRound('rock', computerPlay()));
+paper.addEventListener('click', () => playRound('paper', computerPlay()))
+scissors.addEventListener('click', () => playRound('scissors', computerPlay()))
